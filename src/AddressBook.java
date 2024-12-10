@@ -6,6 +6,10 @@ public class AddressBook {
         contacts.add(contact);
     }
     public void displayContacts() {
+        if (contacts.isEmpty()) {
+            System.out.println("No contacts in the Address Book.");
+            return;
+        }
         for (Contact contact : contacts) {
             System.out.println(contact);
         }
