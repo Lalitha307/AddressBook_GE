@@ -28,5 +28,8 @@ public class Main {
         addressBook.addContact(contact);
         System.out.println("\nAll Contacts:");
         addressBook.displayContacts();
+        System.out.print("\nEnter the first name of the contact to edit: ");
+        String editName = scanner.nextLine();
+        addressBook.editContact(editName);
     }
 }
