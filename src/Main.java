@@ -31,5 +31,8 @@ public class Main {
         System.out.print("\nEnter the first name of the contact to edit: ");
         String editName = scanner.nextLine();
         addressBook.editContact(editName);
+        System.out.print("\nEnter the first name of the contact to delete: ");
+        String deleteName = scanner.nextLine();
+        addressBook.deleteContact(deleteName);
     }
 }
